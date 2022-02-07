@@ -65,6 +65,16 @@
 
         </section>
     </div>
+
+
+    <!-- 스와이퍼 -->
+    <div class="swiper jeju_course wow fadeInRight">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
+         <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
+         <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
+       </div>
+     </div>
 </body>
 
 
@@ -73,24 +83,16 @@
         new WOW().init();
     });
 
-
     var swiper = new Swiper(".jeju_course", {
-      slidesPerView: "auto",
-      spaceBetween: 30,
+      spaceBetween: 15,
+      slidesPerView: 'auto',
+      centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
     });
+
 </script>
 
 </html>
-
-<!-- 스와이퍼 -->
-<!-- <div class="swiper jeju_course wow fadeInRight">
-   <div class="swiper-wrapper">
-     <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
-     <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
-     <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
-   </div>
- </div> -->
