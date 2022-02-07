@@ -22,15 +22,24 @@
         </div>
         <section>
             <div class="sub0201">
-              <img src="./asset/img/sub02/02.png" alt="" class="img01 wow fadeInUp">
-              <img src="./asset/img/sub02/03.png" alt="" class="img02 wow fadeInRight">
+              <img src="./asset/img/sub02/02.png" alt="" class="img01 wow fadeInLeft">
+              <!-- 스와이퍼 -->
+              <div class="swiper jeju_course wow fadeInRight">
+                 <div class="swiper-wrapper">
+                   <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub02/sw_img.png" alt=""></div>
+                 </div>
+                 <!-- <div class="swiper-pagination"></div> -->
+               </div>
+
               <img src="./asset/img/sub02/04.png" alt="" class="img03 wow fadeInUp">
             </div>
 
             <div class="sub0202">
-              <img src="./asset/img/sub02/05.png" alt="" class="img01 wow fadeInUp">
-              <img src="./asset/img/sub02/06.png" alt="" data-wow-delay="0.2s" class="img02 wow fadeIn">
-              <img src="./asset/img/sub02/07.png" alt="" data-wow-delay="0.4s" class="img03 wow fadeIn">
+              <img src="./asset/img/sub02/05.png" alt="" class="img01 wow fadeInLeft">
+              <img src="./asset/img/sub02/06.png" alt="" data-wow-delay="0.2s" class="img02 wow fadeInRight">
+              <img src="./asset/img/sub02/07.png" alt="" data-wow-delay="0.4s" class="img03 wow fadeInUp">
             </div>
 
             <div class="sub0203">
@@ -40,7 +49,7 @@
             </div>
 
             <div class="sub0204">
-              <img src="./asset/img/sub02/11.png" alt="" class="img01 wow fadeIn">
+              <img src="./asset/img/sub02/11.png" alt="" class="img01 wow fadeInUp">
               <img src="./asset/img/sub02/12.png" alt="" class="img02 wow fadeInRight">
               <img src="./asset/img/sub02/13.png" alt="" class="img03 wow fadeInRight">
               <img src="./asset/img/sub02/14.png" alt="" class="img04 wow fadeInRight">
@@ -48,9 +57,9 @@
 
             <div class="sub0205">
               <img src="./asset/img/sub02/15.png" alt="" class="img01 wow fadeIn">
-              <img src="./asset/img/sub02/16.png" alt="" class="img02 wow fadeInUp">
-              <img src="./asset/img/sub02/17.png" alt="" class="img03 wow fadeInUp">
-              <img src="./asset/img/sub02/18.png" alt="" class="img04 wow fadeInUp">
+              <img src="./asset/img/sub02/16.png" alt="" class="img02 wow fadeInLeft">
+              <img src="./asset/img/sub02/17.png" alt="" class="img03 wow fadeInRight">
+              <img src="./asset/img/sub02/18.png" alt="" class="img04 wow fadeInLeft">
               <img src="./asset/img/sub02/19.png" alt="" class="img05 wow fadeIn">
             </div>
 
@@ -62,6 +71,16 @@
 <script>
     $(document).ready(function(){
         new WOW().init();
+    });
+
+
+    var swiper = new Swiper(".jeju_course", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
 </script>
 

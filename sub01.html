@@ -34,13 +34,13 @@
             </div>
 
             <div class="sub0103">
-              <img src="./asset/img/sub01/10.png" alt="" class="img01 wow fadeIn">
+              <img src="./asset/img/sub01/10.png" alt="" class="img01 wow fadeInLeft">
               <img src="./asset/img/sub01/11.png" alt="" class="img02 wow fadeInUp">
               <img src="./asset/img/sub01/12.png" alt="" class="img03 wow fadeIn">
             </div>
 
             <div class="sub0104">
-              <img src="./asset/img/sub01/13.png" alt="" class="img01 wow fadeIn">
+              <img src="./asset/img/sub01/13.png" alt="" class="img01 wow fadeInLeft">
               <img src="./asset/img/sub01/14.png" alt="" class="img02 wow fadeInUp">
               <img src="./asset/img/sub01/15.png" alt="" class="img03 wow fadeInUp">
               <img src="./asset/img/sub01/16.png" alt="" class="img04 wow fadeInUp">
@@ -49,21 +49,45 @@
             <div class="sub0105">
               <img src="./asset/img/sub01/17.png" alt="" class="img01 wow fadeInRight">
               <img src="./asset/img/sub01/18.png" alt="" class="img02 wow fadeInUp">
-              <img src="./asset/img/sub01/19.png" alt="" class="img03 wow fadeIn">
+              <!-- 인터뷰 스와이프 -->
+              <div class="swiper interview wow fadeInLeft">
+                <img src="./asset/img/sub01/qna_bg.png" alt="" class="interview_bg">
+
+                 <div class="swiper-wrapper">
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q01.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q02.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q03.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q04.png" alt=""></div>
+                 </div>
+                 <div class="swiper-pagination"></div>
+               </div>
+
               <img src="./asset/img/sub01/20.png" alt="" class="img04 wow fadeInLeft">
-              <img src="./asset/img/sub01/21.png" alt="" class="img05 wow fadeIn">
+
+              <!-- 인터뷰 스와이프 -->
+              <div class="swiper interview wow fadeInRight">
+                <img src="./asset/img/sub01/qna_bg02.png" alt="" class="interview_bg02">
+
+                 <div class="swiper-wrapper">
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q01.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q02.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q03.png" alt=""></div>
+                   <div class="swiper-slide"><img src="./asset/img/sub01/Q04.png" alt=""></div>
+                 </div>
+                 <div class="swiper-pagination"></div>
+               </div>
             </div>
 
             <div class="sub0106">
               <img src="./asset/img/sub01/22.png" alt="" class="img01 wow fadeInUp">
               <img src="./asset/img/sub01/23.png" alt="" class="img02 wow fadeInUp">
               <img src="./asset/img/sub01/24.png" alt="" data-wow-delay="0.2s" class="img03 wow fadeIn">
-              <img src="./asset/img/sub01/25.png" alt="" data-wow-delay="0.4s" class="img04 wow fadeInUp">
-              <img src="./asset/img/sub01/26.png" alt="" data-wow-delay="0.5s" class="img05 wow fadeInUp">
-              <img src="./asset/img/sub01/27.png" alt="" data-wow-delay="0.6s" class="img06 wow fadeInUp">
-              <img src="./asset/img/sub01/28.png" alt="" data-wow-delay="0.7s" class="img07 wow fadeInUp">
-              <img src="./asset/img/sub01/29.png" alt="" data-wow-delay="0.8s" class="img08 wow fadeInUp">
-              <img src="./asset/img/sub01/30.png" alt="" data-wow-delay="0.9s" class="img09 wow fadeInUp">
+              <img src="./asset/img/sub01/25.png" alt="" data-wow-delay="0.4s" class="img04 wow fadeInLeft">
+              <img src="./asset/img/sub01/26.png" alt="" data-wow-delay="0.5s" class="img05 wow fadeInRight">
+              <img src="./asset/img/sub01/27.png" alt="" data-wow-delay="0.6s" class="img06 wow fadeInLeft">
+              <img src="./asset/img/sub01/28.png" alt="" data-wow-delay="0.7s" class="img07 wow fadeInRight">
+              <img src="./asset/img/sub01/29.png" alt="" data-wow-delay="0.8s" class="img08 wow fadeInLeft">
+              <img src="./asset/img/sub01/30.png" alt="" data-wow-delay="0.9s" class="img09 wow fadeInRight">
               <img src="./asset/img/sub01/31.png" alt="" data-wow-delay="0.9s" class="img10 wow fadeIn">
 
             </div>
@@ -77,6 +101,12 @@
     $(document).ready(function(){
         new WOW().init();
     });
+
+    var swiper = new Swiper(".interview", {
+       pagination: {
+         el: ".swiper-pagination",
+       },
+     });
 </script>
 
 </html>
