@@ -791,7 +791,7 @@ footer .footer__site > li > a{
 
 
 /* sub01 */
-#sub-page-container{width: 100%;max-width:750px;margin: 0 auto;}
+#sub-page-container{width: 100%;max-width:750px;margin: 0 auto;overflow:hidden;}
 #sub-page-container img{width: 100%;display:block;}
 #sub-page-container .sub0101 .img02{margin:7vh 0 5vh;}
 #sub-page-container .sub0102 .img02{margin:3vh 0 1vh;}
